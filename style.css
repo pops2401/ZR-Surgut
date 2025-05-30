@@ -374,3 +374,94 @@
         font-size: 14px;
       }
     }
+/* --- Адаптация для мобильных устройств (до 768px) --- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .hero {
+    padding-bottom: 400px; /* уменьшим отступ снизу */
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .trailer-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .trailer-description, 
+  .trailer-video {
+    max-width: 100%;
+  }
+
+  .trailer-video iframe {
+    height: 200px;
+  }
+
+  .coaches {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coach {
+    width: 90%;
+  }
+
+  .swiper-slide img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .schedule img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Контактный блок */
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .map {
+    height: 200px;
+  }
+
+  .contact-info {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* --- Для очень маленьких экранов (до 400px) --- */
+@media (max-width: 400px) {
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
