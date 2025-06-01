@@ -1,14 +1,15 @@
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #0e1d14;
-      color: #fff;
-      overflow-x: hidden;
-    }
+/* ОБЩИЕ СТИЛИ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0e1d14;
+  color: #fff;
+  overflow-x: hidden;
+}
 
-    /* ---------- NAVBAR ---------- */
-    nav {
+/* ---------- NAVBAR ---------- */
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,36 +18,42 @@
   color: #fff;
   flex-wrap: wrap;
 }
-.nav-links a {
-      color: #ffffff;
-      margin-left: 35px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
 
-
-.nav-links a:hover {
-  color: #3efc0470; /* цвет при наведении */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  flex-wrap: wrap;
 }
 
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3efc0470;
+}
 
 .nav-left {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.vk-icon {
+
+.vk-icon, .Instagram {
   display: flex;
   align-items: center;
   gap: 5px;
   text-decoration: none;
-  color: #ffffff; /* Цвет по умолчанию */
+  color: #ffffff;
   font-size: 18px;
   transition: color 0.3s;
 }
 
-.vk-icon i {
+.vk-icon i, .Instagram i {
   font-size: 22px;
 }
 
@@ -54,83 +61,57 @@
   color: #0077ff;
 }
 
-.vk-text {
-  font-weight: 500;
-}
-.Instagram {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  text-decoration: none;
-  color: #ffffff; /* Цвет по умолчанию */
-  font-size: 18px;
-  transition: color 0.3s;
-}
-
-.Instagram i {
-  font-size: 22px;
-}
-
 .Instagram:hover {
   color: #fc07d3;
 }
 
-.Instagram-text {
+.vk-text, .Instagram-text {
   font-weight: 500;
 }
 
-      
-    .nav-logo {
-      height: 70px;
-    }
+.nav-logo {
+  height: 70px;
+}
 
-    .nav-links a {
-      color: #ffffff;
-      margin-left: 35px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
- 
+/* ---------- HERO ---------- */
+.hero {
+  height: 100vh;
+  background: url('IN91kAQ1BgY.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-bottom: 900px;
+  overflow: hidden;
+}
 
-    /* ---------- HERO ---------- */
-    .hero {
-      height: 100vh;
-      background: url('IN91kAQ1BgY.jpg') no-repeat center center/cover;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding-bottom: 900px;
-      overflow: hidden;
-    }
-    .hero .overlay {
+.hero .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* 0.5 — это степень затемнения */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-    .hero-content {
+
+.hero-content {
   position: relative;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0);
   padding: 30px 50px;
   border-radius: 10px;
-  color: #fff; /* Белый текст */
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Светящаяся тень */
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-
 .hero h1 {
- font-size: 2.8em;
+  font-size: 2.8em;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #ffffff; 
+  color: #ffffff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
@@ -141,43 +122,41 @@
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
 
-    
+.logo {
+  max-width: 0px;
+  width: 80%;
+  margin-bottom: 30px;
+}
 
-    .logo {
-      max-width: 0px;
-      width: 80%;
-      margin-bottom: 30px;
-    }
+.btn {
+  background-color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-transform: uppercase;
+}
 
-    .btn {
-      background-color: #ffffff;
-      padding: 15px 30px;
-      border: none;
-      color: white;
-      font-size: 18px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-      text-transform: uppercase;
-    }
+.btn:hover {
+  background-color: #388e3c;
+}
 
-    .btn:hover {
-      background-color: #388e3c;
-    }
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
 
-    section {
-      padding: 80px 20px;
-      text-align: center;
-    }
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
 
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 40px;
-      color: #ffffff;
-    }
-
-    /* ---------- TRAILER ---------- */
-    .trailer {
+/* ---------- TRAILER ---------- */
+.trailer {
   position: relative;
   padding: 40px 20px;
   background: url('фон_твоего_выбора.jpg') no-repeat center center;
@@ -191,7 +170,7 @@
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.5); /* затемнённый фон, чтобы текст был читаемым */
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
 }
@@ -213,63 +192,64 @@
   border: none;
   border-radius: 10px;
 }
-    /* ---------- COACHES ---------- */
-    .coaches {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
 
-    .coach {
-      background-color: #1b2e21;
-      padding: 20px;
-      border-radius: 10px;
-      width: 250px;
-    }
+/* ---------- COACHES ---------- */
+.coaches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
 
-    .coach img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
+.coach {
+  background-color: #1b2e21;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
 
-    .coach h3 {
-      margin-bottom: 10px;
-      color: #ffffff;
-    }
+.coach img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
 
-    .coach p {
-      font-size: 14px;
-      color: #ccc;
-    }
+.coach h3 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
 
-    /* ---------- GALLERY ---------- */
-    .swiper {
+.coach p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ---------- GALLERY ---------- */
+.swiper {
   width: 100%;
   max-width: 1200px;
   margin: 50px auto;
 }
 
 .swiper-slide img {
-  width: 300px;       /* фиксированная ширина */
-  height: 300px;      /* фиксированная высота — чтобы квадрат */
-  object-fit: cover;  /* заполнить квадрат, сохраняя пропорции и обрезая лишнее */
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  display: block;     /* убрать лишние отступы под картинкой */
-  margin: 0 auto;     /* центрировать внутри слайда */
+  display: block;
+  margin: 0 auto;
 }
 
+/* ---------- SCHEDULE ---------- */
+.schedule img {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,255,100,0.3);
+}
 
-    /* ---------- SCHEDULE ---------- */
-    .schedule img {
-      width: 90%;
-      max-width: 600px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,255,100,0.3);
-    }
-/*---------- contact ----------*/
+/* ---------- CONTACT ---------- */
 .contact {
   background-color:  #0a1d12;
   padding: 40px 20px;
@@ -314,8 +294,7 @@
   border: 0;
 }
 
-
-/* ---------- obratka ---------- */
+/* ---------- FEEDBACK ---------- */
 .feedback {
   padding: 40px;
   background-color: #0e1d14;
@@ -351,18 +330,16 @@
   background-color: #444;
 }
 
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: rgba(0, 40, 0, 0.9);
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+}
 
-    /* ---------- FOOTER ---------- */
-    footer {
-      background-color: rgba(0, 40, 0, 0.9);
-      padding: 20px;
-      font-size: 14px;
-      color: #777;
-    }
-
-   /* --- Адаптация для мобильных устройств (до 768px) --- */
+/* ---------- MEDIA QUERIES ---------- */
 @media (max-width: 768px) {
-  /* Навигация */
   nav {
     flex-direction: column;
     padding: 15px 20px;
@@ -372,12 +349,7 @@
     flex-direction: column;
     width: 100%;
     margin-top: 15px;
-    gap: 8px;
-    display: none;
-  }
-
-  .nav-links.active {
-    display: flex;
+    gap: 10px;
   }
 
   .nav-links a {
@@ -386,16 +358,6 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    cursor: pointer;
-    z-index: 1000;
-  }
-
-  /* Герой-секция */
   .hero {
     padding: 80px 20px 300px;
     text-align: center;
@@ -411,7 +373,6 @@
     margin-top: 15px;
   }
 
-  /* Трейлер */
   .trailer-container {
     flex-direction: column;
     padding: 20px;
@@ -429,7 +390,6 @@
     border-radius: 8px;
   }
 
-  /* Тренеры */
   .coaches {
     flex-direction: column;
     padding: 0 20px;
@@ -440,14 +400,12 @@
     margin-bottom: 30px;
   }
 
-  /* Галерея */
   .swiper-slide img,
   .schedule img {
     width: 100%;
     height: auto;
   }
 
-  /* Контакты */
   .contact-wrapper {
     flex-direction: column;
   }
@@ -463,7 +421,6 @@
   }
 }
 
-/* Очень маленькие экраны (до 480px) */
 @media (max-width: 480px) {
   .logo {
     font-size: 1.5rem;
@@ -493,9 +450,4 @@
   .contact-info {
     font-size: 14px;
   }
-}
-
-/* Скрыть гамбургер на больших экранах */
-.menu-toggle {
-  display: none;
 }
