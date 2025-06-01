@@ -83,8 +83,9 @@ function init() {
 }
 
 
-  const burger = document.getElementById('burger');
-  const navLinks = document.getElementById('navLinks');
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
 
   burger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
