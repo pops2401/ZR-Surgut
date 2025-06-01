@@ -1,4 +1,4 @@
-/* ОБЩИЕ СТИЛИ */
+ /* ОБЩИЕ СТИЛИ */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
@@ -48,26 +48,27 @@ nav {
   align-items: center;
   gap: 5px;
   text-decoration: none;
-  color: #ffffff;
+  color: #ffffff; /* цвет текста и иконок */
   font-size: 18px;
   transition: color 0.3s;
 }
 
 .vk-icon i, .Instagram i {
-  font-size: 22px;
+  font-size: 22px; /* размер иконок */
 }
 
 .vk-icon:hover {
-  color: #0077ff;
+  color: #ff0000;
 }
 
 .Instagram:hover {
-  color: #fc07d3;
+  color: #ff0000;
 }
 
 .vk-text, .instagram-text {
   font-weight: 500;
 }
+
 
 .nav-logo {
   height: 70px;
@@ -451,6 +452,7 @@ footer {
     font-size: 14px;
   }
 }
+
 .burger {
   display: none;
   font-size: 28px;
