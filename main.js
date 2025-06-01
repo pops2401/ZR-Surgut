@@ -34,32 +34,33 @@
 
  
 // слайд шоу в галереи 
-  const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    spaceBetween: 20,
-    centeredSlides: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
+  const swiper = new Swiper('.mySwiper', {
+  loop: true,
+  spaceBetween: 20,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    1024: {
+      slidesPerView: 3,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    slidesPerView: 1,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-  });
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+});
+
 
    ymaps.ready(init);
 
