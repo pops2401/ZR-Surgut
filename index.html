@@ -4,97 +4,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ZR Brazilian Jiu-Jitsu</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav>
-    <div class="nav-left">
-    <img src="logo.png" alt="ZR Logo" class="nav-logo">
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="logo.png" alt="ZR Logo" class="nav-logo" />
     <div class="nav-title">ZR BRAZILIAN JIU-JITSU SURGUT</div>
-    <!-- Добавляем иконку ВК -->
-    <a href="https://vk.com/zrteam_surgut" target="_blank" class="vk-icon" aria-label="VK">
-      <i class="fab fa-vk"></i> <span class="vk-text">Группа ВК</span>
+    <a href="https://vk.com/zrteam_surgut" target="_blank" class="social-link" aria-label="VK">
+      <i class="fab fa-vk"></i> <span>Группа ВК</span>
     </a>
-    <!-- ИКОНКИ  инстограмма -->
-      <a href="https://www.instagram.com/bjj_surgut?igsh=c3d1MG1teTBkMGpy" target="_blank" class="Instagram" aria-label="Instagram">
-        <i class="fab fa-instagram"></i> <span class="instagram-text">Instagram</span>
-      </a>
-      </div>
-     <!-- Burger Menu (new) -->
+    <a href="https://www.instagram.com/bjj_surgut?igsh=c3d1MG1teTBkMGpy" target="_blank" class="social-link" aria-label="Instagram">
+      <i class="fab fa-instagram"></i> <span>Instagram</span>
+    </a>
+  </div>
+
   <div class="burger" id="burger">
     <i class="fas fa-bars"></i>
   </div>
-   
-    <div class="nav-links">
-      <a href="#trailer">Видос</a>
-      <a href="#coaches">Наши тренера</a>
-      <a href="#gallery">Фото</a>
-      <a href="#schedule">Рассписание</a>
-      <a href="#contact">Если хочешь к нам</a>
-    </div>
-  </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Добро пожаловать в ZR BJJ Surgut</h1>
+  <div class="nav-links" id="navLinks">
+    <a href="#trailer">Видос</a>
+    <a href="#coaches">Наши тренера</a>
+    <a href="#gallery">Фото</a>
+    <a href="#schedule">Расписание</a>
+    <a href="#contact">Контакты</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Добро пожаловать в ZR BJJ Surgut</h1>
     <p>Твое место силы на татами</p>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- TRAILER -->
-  <section id="trailer" class="trailer">
+<!-- TRAILER -->
+<section id="trailer" class="trailer">
   <h2>Видос</h2>
   <div class="trailer-container">
     <div class="trailer-description">
-      <p>Школа развивающая и популяризирующая Бразильское Джиу-Джитсу на территории Сургута.
-Мы являемся официальными представителями международной школы "ZR TEAM", созданной мастером Жозе Олимпио (более известный в мире джиу-джитсу как Ze Radiola). Зе Радиола является одним из самых уважаемых и успешных инструкторов по бразильскому джиу-джитсу в мире.
-Занятия проходят в двух форматах:
-GI (кимоно) - традиционный вариант, и NO GI (без кимоно) - Грэпплинг</p>
-      <p>Присоединяйтесь и станьте частью нашей команды!</p>
+      <p>
+        Школа развивающая и популяризирующая Бразильское Джиу-Джитсу на территории Сургута. Мы являемся официальными представителями международной школы "ZR TEAM", созданной мастером Жозе Олимпио (Ze Radiola) — одним из самых уважаемых инструкторов по BJJ в мире.
+      </p>
+      <p>
+        Занятия проходят в двух форматах: GI (в кимоно) и NO GI (грэпплинг). Присоединяйтесь и станьте частью нашей команды!
+      </p>
     </div>
-<div class="trailer-video">
-  <iframe src="https://drive.google.com/file/d/1SR8JivoGf929WQ8TMyFw1GuLXxb0RtxA/preview" width="640" height="480" allow="autoplay" allowfullscreen></iframe>
-</div>
-</div>
-
-  <!-- COACHES -->
-  <section id="coaches">
-    <h2>Наши тренера</h2>
-    <div class="coaches">
-      <div class="coach">
-        <img src="Дима.jpg" alt="Тренер 1">
-        <h3> Зоренко Дмитрий Генадьевич </h3>
-        <p>Главный тренер Сургута по BJJ</p>
-      </div>
-      <div class="coach">
-        <img src="Эдки.jpg" alt="Тренер 2">
-        <h3>Димура Эдуард Юрьевич </h3>
-        <p>GRAPPLING - это вид борьбы, который концентрируется на технике захватов, бросков и борьбы в партере с использованием болевых и удушающих приемов.
-Наш тренер Эдуард Димура - мастер спорта России, обучит вас всему необходимому. Ждём вас на тренировках</p>
-      </div>
-      <div class="coach">
-        <img src="Геворг.jpg" alt="Тренер 3">
-        <h3>Арутюнян Геворг </h3>
-        <p>Brazilian Jiu-Jitsu (Бразильское джиу-джитсу) - это боевое искусство, основой которого является борьба в партере с использованием различных болевых и удушающих приемов.
-Наш тренер Арутюнян Геворг поможет вашему ребёнку освоить навыки Бразильского Джиу-Джитсу.</p>
-      </div>
-      <div class="coach">
-        <img src="Рома.jpg" alt="Тренер 4">
-        <h3>Зинченко Роман </h3>
-        <p>Описание тренера.</p>
-      </div>
+    <div class="trailer-video">
+      <iframe src="https://drive.google.com/file/d/1SR8JivoGf929WQ8TMyFw1GuLXxb0RtxA/preview" width="640" height="480" allow="autoplay" allowfullscreen></iframe>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- GALLERY -->
-  <section id="gallery">
-  <h2>фото</h2>
+<!-- COACHES -->
+<section id="coaches" class="coaches-section">
+  <h2>Наши тренера</h2>
+  <div class="coaches">
+    <div class="coach">
+      <img src="Дима.jpg" alt="Зоренко Дмитрий" />
+      <h3>Зоренко Дмитрий Геннадьевич</h3>
+      <p>Главный тренер Сургута по BJJ</p>
+    </div>
+    <div class="coach">
+      <img src="Эдки.jpg" alt="Димура Эдуард" />
+      <h3>Димура Эдуард Юрьевич</h3>
+      <p>Мастер спорта России по грэпплингу. Обучит вас техникам захватов, борьбы в партере и болевым приемам.</p>
+    </div>
+    <div class="coach">
+      <img src="Геворг.jpg" alt="Арутюнян Геворг" />
+      <h3>Арутюнян Геворг</h3>
+      <p>Тренер по BJJ для детей. Поможет освоить боевое искусство через партер и контроль.</p>
+    </div>
+    <div class="coach">
+      <img src="Рома.jpg" alt="Зинченко Роман" />
+      <h3>Зинченко Роман</h3>
+      <p>Тренер по физподготовке и функциональному тренингу.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery-section">
+  <h2>Фото</h2>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="гал1.jpg" alt="Фото 1" /></div>
@@ -105,81 +103,60 @@ GI (кимоно) - традиционный вариант, и NO GI (без к
       <div class="swiper-slide"><img src="гал 6.jpg" alt="Фото 6" /></div>
       <div class="swiper-slide"><img src="гал 7.jpg" alt="Фото 7" /></div>
     </div>
-
-    <!-- Кнопки навигации -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    <!-- Пагинация -->
     <div class="swiper-pagination"></div>
   </div>
 </section>
 
-<!-- Подключение Swiper JS -->
+<!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
- 
+
 <!-- SCHEDULE -->
-  <section id="schedule" class="schedule">
-    <h2>Рассписание</h2>
-    <img src="рассписание.jpg" alt="Расписание" />
-     </section>
-    
- <!--contact-->
+<section id="schedule" class="schedule">
+  <h2>Расписание</h2>
+  <img src="рассписание.jpg" alt="Расписание тренировок" />
+</section>
+
+<!-- CONTACT -->
 <section id="contact" class="contact">
-  <h3>Если хочешь к нам</h3>
-  <div class="contact-wrapper" style="display: flex; flex-direction: column; gap: 20px;">
-
-    <!-- Контейнер под карту -->
+  <h2>Контакты</h2>
+  <div class="contact-wrapper">
     <div id="map" style="width: 100%; height: 300px;"></div>
-
-    <!-- Контакты -->
     <div class="contact-info">
       <p><strong>Телефон:</strong> +7 (912) 905-48-92</p>
       <p><strong>Email:</strong> <a href="mailto:info@zrbjj.ru">info@zrbjj.ru</a></p>
       <p><strong>Адрес:</strong> г. Сургут, ул. Генерала Иванова, 1, ТЦ Вершина</p>
-      <p><strong>Адрес:</strong> г. Сургут, ул. Мира 44,  Крепость</p>
+      <p><strong>Адрес:</strong> г. Сургут, ул. Мира 44, Крепость</p>
     </div>
-
   </div>
-
-  <!-- Подключение API Яндекс Карт -->
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
-  <!-- Подключение  скрипта -->
-  <script src="map.js" type="text/javascript"></script>
 </section>
 
-  <!-- Скрипт Яндекс.Карт с меткой -->
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script type="text/javascript"></script>
-</section>
-
-
-
-
-<!-- FEEDBACK FORM -->
+<!-- FEEDBACK -->
 <section id="feedback" class="feedback">
   <h2>Оставить заявку</h2>
   <form id="contactForm" action="https://formsubmit.co/kirill016@yandex.ru" method="POST">
-    <input type="text" name="name" placeholder="Ваше имя" required>
-    <input type="email" name="email" placeholder="Ваш Email" required>
+    <input type="text" name="name" placeholder="Ваше имя" required />
+    <input type="email" name="email" placeholder="Ваш Email" required />
     <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
-
-    <!-- защита от спама -->
-    <input type="text" name="_honey" style="display:none">
-    <input type="hidden" name="_captcha" value="false">
-
+    <input type="text" name="_honey" style="display:none" />
+    <input type="hidden" name="_captcha" value="false" />
     <button type="submit">Отправить</button>
   </form>
-
   <div id="loadingMessage" style="display:none; margin-top:15px; font-weight:bold; color:#007BFF;">
     Ждите, вам позвонят...
   </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <span>&copy; 2025 ZR Brazilian Jiu-Jitsu. Все права защищены.</span>
+  <span>Создано Черновым Кириллом Алексеевичем</span>
+</footer>
+
+ <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="map.js"></script>
+
 <script src="main.js"></script>
-  <!-- FOOTER -->
-  <footer>
-   <span class="left-text"> &copy; 2025 ZR Brazilian Jiu-Jitsu. Все права защищены.</span>
-    <span class="right-text"> &copy; Создано Черновым Кириллам Алексеевичем</span>
-  </footer>
 </body>
 </html>
