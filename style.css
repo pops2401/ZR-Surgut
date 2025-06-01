@@ -497,11 +497,6 @@
   }
 }
 
-/* Гамбургер-меню (активация) */
-.menu-toggle {
-  display: none; /* Скрыто по умолчанию */
-}
-
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
