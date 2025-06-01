@@ -360,144 +360,32 @@
       color: #777;
     }
 
-   
-    /* --- Адаптация для мобильных устройств (до 768px) --- */
-/* Мобильные устройства (до 768px) */
+   /* --- Адаптация для мобильных устройств (до 768px) --- */
 @media (max-width: 768px) {
   /* Навигация */
   nav {
     flex-direction: column;
     padding: 15px 20px;
   }
-  
+
   .nav-links {
     flex-direction: column;
     width: 100%;
     margin-top: 15px;
     gap: 8px;
-    display: none; /* Скрываем по умолчанию для гамбургер-меню */
+    display: none;
   }
-  
+
   .nav-links.active {
-    display: flex; /* Показываем при активации */
+    display: flex;
   }
-  
+
   .nav-links a {
     padding: 8px 0;
     font-size: 16px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
-  /* Герой-секция */
-  .hero {
-    padding: 80px 20px 300px;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 2rem;
-    line-height: 1.3;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-top: 15px;
-  }
-  
-  /* Трейлер */
-  .trailer-container {
-    flex-direction: column;
-    padding: 20px;
-    gap: 30px;
-  }
-  
-  .trailer-description,
-  .trailer-video {
-    width: 100%;
-  }
-  
-  .trailer-video iframe {
-    height: 200px;
-    border-radius: 8px;
-  }
-  
-  /* Тренеры */
-  .coaches {
-    flex-direction: column;
-    padding: 0 20px;
-  }
-  
-  .coach {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  
-  /* Галерея */
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Расписание */
-  .schedule img {
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Контакты */
-  .contact-wrapper {
-    flex-direction: column;
-  }
-  
-  .map {
-    height: 250px;
-    width: 100%;
-  }
-  
-  .contact-info {
-    padding: 20px;
-    font-size: 16px;
-  }
-}
 
-/* Очень маленькие экраны (до 480px) */
-@media (max-width: 480px) {
-  /* Навигация */
-  .logo {
-    font-size: 1.5rem;
-  }
-  
-  /* Герой-секция */
-  .hero {
-    padding-bottom: 250px;
-  }
-  
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-  
-  .hero p {
-    font-size: 1rem;
-  }
-  
-  /* Кнопки */
-  .btn {
-    padding: 10px 18px;
-    font-size: 14px;
-  }
-  
-  /* Трейлер */
-  .trailer-video iframe {
-    height: 180px;
-  }
-  
-  /* Контакты */
-  .contact-info {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 768px) {
   .menu-toggle {
     display: block;
     position: absolute;
@@ -506,4 +394,108 @@
     cursor: pointer;
     z-index: 1000;
   }
+
+  /* Герой-секция */
+  .hero {
+    padding: 80px 20px 300px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+
+  /* Трейлер */
+  .trailer-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .trailer-description,
+  .trailer-video {
+    width: 100%;
+  }
+
+  .trailer-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+  }
+
+  /* Тренеры */
+  .coaches {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .coach {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* Галерея */
+  .swiper-slide img,
+  .schedule img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Контакты */
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .map {
+    height: 250px;
+    width: 100%;
+  }
+
+  .contact-info {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    padding-bottom: 250px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .trailer-video iframe {
+    aspect-ratio: 16 / 9;
+  }
+
+  .contact-info {
+    font-size: 14px;
+  }
+}
+
+/* Скрыть гамбургер на больших экранах */
+.menu-toggle {
+  display: none;
 }
