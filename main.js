@@ -82,7 +82,5 @@ function init() {
     myMap.geoObjects.add(placemark2);
 }
 
-ocument.querySelector('.menu-toggle').addEventListener('click', function() {
-  document.querySelector('.nav-links').classList.toggle('active');
-});
+
 
