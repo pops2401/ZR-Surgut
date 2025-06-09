@@ -24,6 +24,7 @@ nav {
   flex-direction: row;
   gap: 35px;
   flex-wrap: wrap;
+  font-size: 20px;
 }
 
 .nav-links a {
@@ -52,27 +53,38 @@ nav {
   font-size: 18px;
   transition: color 0.3s;
 }
+.vk-icon, .Instagram {
+  margin-top: -5px;
+}
+
 
 .vk-icon i, .Instagram i {
   font-size: 22px; /* размер иконок */
 }
 
 .vk-icon:hover {
-  color: #a30000;
+  color: #0439c970;
 }
 
 .Instagram:hover {
-  color: #ff0000;
+  color: #bb072eb0;
 }
 
 .vk-text, .instagram-text {
   font-weight: 500;
 }
 
+.nav-title {
+  font-size: 18px;
+  font-weight: bold;
+  transform: translateY(-2px);
+}
+
 
 .nav-logo {
-  height: 70px;
+  height: 60px;
 }
+
 .logo-container {
   display: flex;
   flex-direction: column;
@@ -80,7 +92,7 @@ nav {
 }
 
 .logo-subtext {
-  font-size: 15px;
+  font-size: 10px;
   color: #ffffff;
   margin-top: 10px;
 }
